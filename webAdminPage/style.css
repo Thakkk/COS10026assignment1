@@ -1,0 +1,202 @@
+/* Colour palette */
+:root {
+    --primary: #D2E0BF;
+    --primary-text: #000000;
+    --secondary: #000000;
+    --secondary-text: #FFFFFF;
+    --tertiary: #363636;
+}
+
+/* Basic */
+
+html {
+    background-color: #61e9fa;
+    animation: hue-shifter 30s infinite;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3em;
+    padding: 0;
+
+    font-family: "American Typewriter", ui-sans-serif;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@keyframes hue-shifter {
+    0% { filter: hue-rotate(0deg) }
+    5% { filter: hue-rotate(18deg) }
+    10% { filter: hue-rotate(36deg) }
+    15% { filter: hue-rotate(54deg) }
+    20% { filter: hue-rotate(72deg) }
+    25% { filter: hue-rotate(90deg) }
+    30% { filter: hue-rotate(108deg) }
+    35% { filter: hue-rotate(126deg) }
+    40% { filter: hue-rotate(144deg) }
+    45% { filter: hue-rotate(162deg) }
+    50% { filter: hue-rotate(180deg) }
+    55% { filter: hue-rotate(198deg) }
+    60% { filter: hue-rotate(216deg) }
+    65% { filter: hue-rotate(234deg) }
+    70% { filter: hue-rotate(252deg) }
+    75% { filter: hue-rotate(270deg) }
+    80% { filter: hue-rotate(288deg) }
+    85% { filter: hue-rotate(306deg) }
+    90% { filter: hue-rotate(324deg) }
+    95% { filter: hue-rotate(342deg) }
+    100% { filter: hue-rotate(360deg) }
+}
+
+/* Nav bar */
+
+.nav_bar {
+    margin-top: 0;
+    z-index: 500;
+}
+
+.nav_title {
+    display: inline-block;
+    float: left;
+    padding: 0.7em 1.5em;
+    margin: 0;
+    background-color: var(--secondary);
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    color: var(--secondary-text);
+    z-index: 500;
+}
+
+.nav_list {
+    list-style-type: none;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    z-index: 500;
+}
+
+.nav_item {
+    display: inline-block;
+    float: left;
+    padding: 1em 1.5em;
+    margin: 0;
+    background-color: var(--secondary);
+    text-align: center;
+    z-index: 500;
+}
+
+.nav_link {
+    /* Remove hyperlink styling */
+    color: var(--secondary-text);
+    text-decoration: none;
+    z-index: 500;
+}
+
+.nav_item:hover {
+    background-color: var(--tertiary);
+    z-index: 500;
+}
+
+/* Title */
+
+h1 {
+    text-align: center;
+}
+
+/* Apply page */
+
+form {
+    margin: 1em;
+}
+
+fieldset {
+    position: relative;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    margin: 1em;
+
+}
+
+legend {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    background-color: var(--secondary);
+    color: var(--secondary-text);
+    border-radius: 0 0.4em 0 0.4em;
+
+}
+
+label {
+    padding: 0.5em;
+    background-color: transparent;
+    color: var(--primary-text);
+    font:
+            0.8em "typewriter",
+            sans-serif;
+}
+
+input, textarea {
+    margin: 0;
+    background: none;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+
+input {
+    padding: 0.5em;
+    width: auto;
+}
+
+select {
+    background-color: var(--secondary);
+    color: var(--secondary-text);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+textarea {
+    overflow: auto;
+    padding: 1em;
+    width: 95%;
+}
+
+.form_buttons_list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.form_buttons {
+    display: inline-block;
+    float: left;
+    padding: 1em 1.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    background-color: var(--secondary);
+    text-align: center;
+    color: var(--secondary-text);
+}
+
+.form_buttons:hover {
+    background-color: var(--tertiary);
+}
+
+input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+

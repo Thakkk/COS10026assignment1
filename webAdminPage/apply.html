@@ -3,15 +3,17 @@
     <meta name="description" content="Apply for a job">
     <meta name="keywords" content="">
     <meta name="author" content="Darragh Hazell">
+    <link rel="stylesheet" href="style.css">
     <title>Job Application</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="enhancements.html">Enhancements</a></li>
+    <nav class="navbar">
+        <ul class="nav_list">
+            <li class="nav_title">Pro Website Makers</li>
+            <li class="nav_item"><a class="nav_link" href="index.html">Home</a></li>
+            <li class="nav_item"><a class="nav_link" href="about.html">About</a></li>
+            <li class="nav_item"><a class="nav_link" href="jobs.html">Jobs</a></li>
+            <li class="nav_item"><a class="nav_link" href="enhancements.html">Enhancements</a></li>
         </ul>
     </nav>
     <h1>Job Application</h1>
@@ -135,9 +137,9 @@
                 <textarea name="other_skills" id="other_skills"></textarea>
             </p>
         </fieldset>
-        <p>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </p>
+        <ul class="form_buttons_list">
+            <li class="form_buttons"><input type="submit" value="Submit"></li>
+            <li class="form_buttons"><input type="reset" value="Reset"></li>
+        </ul>
     </form>
 </body>
