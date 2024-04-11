@@ -1,0 +1,206 @@
+.site-header h1 {
+    font-size: 2.5em; 
+    color: #f4f3f7; /* Your brand color */
+    text-shadow: 2px 2px 4px rgba(13, 0, 18, 0.7); /* Adds depth (ehancements)  */
+    text-transform: uppercase; /*Upper case for Company text (Thak)*/
+    letter-spacing: 0.1em; /* Adjust letter spacing for a more custom look */
+  }
+  
+  /* making it more visible and easier to read for h1 */ 
+  .site-header h1 {
+    background: -webkit-linear-gradient(left, #ff73e1, #ffffff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Add responsiveness to your logo */
+  @media (max-width: 768px) {
+    .site-header h1 {
+      font-size: 2em; /* Smaller font size on smaller screens */
+    }
+  }
+  
+
+/* Base Styles */
+body, h1, h2, ul, li, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f4f4f4; /* Light gray background for a clean look */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px; /* Adjusted logo size for better visibility */
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #5d3f6a; /* Deep purple to match the logo */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #674172; /* Slightly lighter purple for contrast */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Main Content Styles */
+main {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main h2 {
+    color: #5d3f6a;
+    margin-bottom: 10px;
+}
+
+main p, main ul {
+    margin-bottom: 15px;
+}
+
+/* Services, Jobs, and News Sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5d3f6a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact-button a {
+    background-color: #8d6698; /* Lighter purple */
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contact-button a:hover {
+    background-color: #a2849e;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* style for about */
+/* Base styles for consistency */
+body {
+    font-family: Arial, sans-serif; /* Example font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #333; /* Dark background */
+    overflow: hidden;
+}
+
+.nav_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_item a, .nav_current a {
+    float: left;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 14px 16px; /* Spacing inside links */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Increase font size */
+}
+
+.nav_current a, .nav_item a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Text color on hover */
+}
+
+/* Common Section Styles */
+section {
+    padding: 20px; /* Spacing around content */
+    margin: 10px 0; /* Spacing outside section */
+    background-color: white; /* White background for content areas */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width tables */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    text-align: left;
+    padding: 8px; /* Spacing inside table cells */
+    border-bottom: 1px solid #ddd; /* Light grey border */
+}
+
+th {
+    background-color: #333;
+    color: white; /* Header row styling */
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    display: block; /* Remove inline-block spacing */
+    margin: 0 auto; /* Center images */
+}
+.container_footer {
+    margin: 0 auto; 
+    max-width: 1000px; /* Adjust the maximum width as needed */
+}
+
+/* Additional styling as needed */
